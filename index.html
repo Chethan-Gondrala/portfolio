@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/ionicons.min.css">
@@ -127,12 +127,10 @@
 
   </head>
  
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Gondrala Chethan</a>
+	      <a class="navbar-brand" href="index.html">Chethan Cherry</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -149,188 +147,165 @@
 	      </div>
 	    </div>
 	  </nav>
+	  
 	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/b.png);">
-					 
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello! <i class="fa-solid fa-hand-wave"></i></i></span>
-			            <h1 class="mb-4 mt-3">I'm <span>Chethan </span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'passionate Full Stack Web Developer 🚀',
-						'Aspring AI and ML Engineer',
-						'Software Developer ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
+		<div class="col-12 home-slider owl-carousel">
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/b.png);">
+				  <div class="overlay"></div>
+				</div>
+				<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+				  <div class="text">
+					<h1 class="subheading"><span>Hello! <i class="fa-solid fa-hand-wave"></i></span></h1>
+					<h1 class="mb-4 mt-3">I'm <span>Chethan</span></h1>
+					<span id="typing-animation"></span>
+					<script>
+					  const typingAnimationElement = document.getElementById('typing-animation');
+					  const typingTexts = [
+						'passionate Full Stack Developer🚀',
+						'Aspiring AI and ML Engineer',
+						'Software Developer',
+					  ];
+	  
+					  function playTypingAnimation(text) {
 						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
+						  setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
+						  }, i * 200);
 						}
-
-						// Once the animation is complete, reset the text and start over
+	  
 						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						  typingAnimationElement.textContent = '';
+						  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
 						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Trainee at NXTWave CCBP</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/chethan-gondrala/" class="btn btn-primary py-3 px-4">Linkedin</a> 
-							<a href="https://drive.google.com/file/d/1DrvMbmkYBvbfIfTgOzf8Jh1w4Ol-BRdW/view?usp=sharing" class="btn btn-white btn-outline-white py-3 px-4">Resume</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
+					  }
+	  
+					  playTypingAnimation(typingTexts[0]);
+					</script>
+					<br><br>
+					<h2>Trainee at NXTWave CCBP</h2>
+					<p>
+					  <a href="https://www.linkedin.com/in/chethan-gondrala/" class="btn btn-primary py-3 px-4">LinkedIn</a>
+					  <a href="https://drive.google.com/file/d/1DrvMbmkYBvbfIfTgOzf8Jh1w4Ol-BRdW/view?usp=sharing" class="btn btn-white btn-outline-white py-3 px-4">Resume</a>
+					</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="video-background1">
+			  <video autoplay muted loop id="bg-video1">
+				<source src="app.steve.ai_steveai_publish_EanKIpEBk2MtsBxbzHcU - Google Chrome 2024-08-05 21-52-07.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
 		</div>
-    </section>
+	  </section>
+	  
+	
 
 
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images\img_che.jpg" class="img_chethan" alt="">
-									  </div>
+	 <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex align-items-stretch">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay">
+							<div class="row">
+								<div class="col-sm-6 col-md-5">
+									<div class="about-img">
+										<img src="images/img_che.jpg" class="img_chethan" alt="">
 									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
+								</div>
+								<div class="col-sm-6 col-md-7">
+									<div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Gondrala Chethan</span></p>
-										<p><span class="title-s">Title: </span> <span>web Development Intern</span></p>
+										<p><span class="title-s">Title: </span> <span>Web Development Intern</span></p>
 										<p><span class="title-s">Experience: </span> <span>3 months as an Intern</span></p>
 										<p><span class="title-s">Address: </span> <span>Andhra Pradesh, India</span></p>
-									  </div>
 									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">60%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>HTML, CSS and javaScript</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Deep Learning</span> <span class="pull-right">60%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+								</div>
+							</div>
+							<div class="skill-mf">
+								<p class="title-s">Skills</p>
+								<span>SQL</span> <span class="pull-right">90%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>PYTHON</span> <span class="pull-right">60%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>HTML, CSS and JavaScript</span> <span class="pull-right">90%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>Deep Learning</span> <span class="pull-right">60%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>Machine Learning</span> <span class="pull-right">80%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 						</div>
 					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>I am Chethan Gondrala, a B.Tech student in CSE-AI with a stellar CGPA of 8.94, graduating in 2025. I have honed my skills in Python, C, and Java, and gained practical experience as a Web Developer intern, specializing in AI-NLP. I created a successful Weather Report Telegram Chatbot and showcased my innovative solutions in hackathons. With certifications from Coursera and NPTEL, I am committed to mastering front-end development and system design. I bring creative and technical expertise to every project I undertake.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>AI Student </span></li>
-									<li class="d-flex"><span>Domain:</span>Web Development &amp; Machine Learning</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
-									<li class="d-flex"><span>Tech Skills:</span> <span>PythonC, SQL, MongoDB &amp; Java</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
-									<li class="d-flex"><span>ML Tools:</span> <span>Numpy, Pandas, Tensorflow,Matplotlib &amp; Keras</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span> Excel, HTML, CSS, Powerpoint</span></li>
-									<li class="d-flex"><span>Platforms:</span> <span>Google Colab, Jupyter, Vscode </span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Telugu</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Designing Websites,Applications</span></li>
-									
-								</ul>
-							</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<p>I am Chethan Gondrala, a B.Tech student in CSE-AI with a stellar CGPA of 8.94, graduating in 2025. I have honed my skills in Python, C, and Java, and gained practical experience as a Web Developer intern, specializing in AI-NLP. I created a successful Weather Report Telegram Chatbot and showcased my innovative solutions in hackathons. With certifications from Coursera and NPTEL, I am committed to mastering front-end development and system design. I bring creative and technical expertise to every project I undertake.</p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Profile:</span> <span>AI Student</span></li>
+								<li class="d-flex"><span>Domain:</span><span>Web Development &amp; Machine Learning</span></li>
+								<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+								<li class="d-flex"><span>Tech Skills:</span> <span>Python, C, SQL, MongoDB &amp; Java</span></li>
+								<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
+								<li class="d-flex"><span>ML Tools:</span> <span>Numpy, Pandas, TensorFlow, Matplotlib &amp; Keras</span></li>
+								<li class="d-flex"><span>Other Skills:</span> <span>Excel, HTML, CSS, PowerPoint</span></li>
+								<li class="d-flex"><span>Platforms:</span> <span>Google Colab, Jupyter, VSCode</span></li>
+								<li class="d-flex"><span>Languages:</span> <span>English, Hindi, Telugu</span></li>
+								<li class="d-flex"><span>Interest:</span> <span>Designing Websites, Applications</span></li>
+							</ul>
 						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" >2</span> <span></span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/chethan-gondrala" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
+					</div>
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+							<p class="mb-4">
+								<span class="number">2</span> <span>&nbsp; Projects completed</span>
+							</p>
+							<p><a href="https://www.linkedin.com/in/chethan-gondrala" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-    </section>
+	</section>
+	
 
 
 
 	
     <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>I am Chethan Gondrala, a B.Tech student specializing in CSE-AI at Madanapalle Institute of Technology & Science, with a CGPA of 8.94. I have hands-on experience as a Web Developer intern at Study Owl Private Limited, where I focused on AI-NLP. I developed a Weather Report Telegram Chatbot, significantly reducing manual efforts and increasing user engagement. I have participated in hackathons, bringing innovative ideas like a Personalized AI-based Virtual Stylist to the finals. With certifications from Coursera and NPTEL, I am skilled in front-end development and system design. My technical expertise includes Python, C, Java, CSS, HTML, and SQL.</p>
-          </div>
-        </div>
-
+    	<div class="row justify-content-center pb-5">
+			<div class="col-md-10 heading-section2 text-center ftco-animate position-relative">
+				<div class="video-background2">
+					<video autoplay muted loop id="bg-video2">
+						<source src="Organic_Lines_4K_Motion_Background_Loop.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<h1 class="big2 big">Resume</h1>
+				
+				<p class="resume-text">I am Chethan Gondrala, a B.Tech student specializing in CSE-AI at Madanapalle Institute of Technology & Science, with a CGPA of 8.94. I have hands-on experience as a Web Developer intern at Study Owl Private Limited, where I focused on AI-NLP. I developed a Weather Report Telegram Chatbot, significantly reducing manual efforts and increasing user engagement. I have participated in hackathons, bringing innovative ideas like a Personalized AI-based Virtual Stylist to the finals. With certifications from Coursera and NPTEL, I am skilled in front-end development and system design. My technical expertise includes Python, C, Java, CSS, HTML, and SQL.</p>
+			</div>
+		</div>
 		<div class="row">
 			<h1 class="big-4">Experience</h1>
 			<div class="underline"></div>
@@ -346,8 +321,7 @@
 						<p class="mt-4">Zidio Development Software Company is a dynamic and forward-thinking technology firm dedicated to delivering cutting-edge software solutions. With a focus on innovation and a commitment to excellence.
 							<ul>
 								<li>Innovative Solutions: We thrive on pushing the boundaries of what is possible, constantly seeking new and innovative solutions to meet the unique needs of our clients.</li>
-								<!-- <li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
-								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
+								
 							</ul>
 						</p>
 					</div>
@@ -363,12 +337,12 @@
 StudyOwl Education Private Limited is an innovative AI-NLP and web development company, enhancing user engagement and automation efficiency. 
 							<ul>
 								<li>Interactive Telegram Weather Bot: Get personalized weather updates,orecasts and customizable rainfall predictions for any city we enter with correct data. </li>
-								<li>Increased the User engagement by 40% by implementing Real time Weather Updates through API </li>
+								
 								
 							</ul>
 						</p>
 					</div>
-
+					
 				</div>
 			</div>
 
@@ -418,6 +392,7 @@ StudyOwl Education Private Limited is an innovative AI-NLP and web development c
    
 
     <section class="ftco-section" id="project-section">
+
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -438,6 +413,17 @@ StudyOwl Education Private Limited is an innovative AI-NLP and web development c
               </div>
             </div>
           </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/Chethan-Gondrala/Resume-creator-app.git" class="block-20 zoom-effect" target="_blank" style="background-image: url('images/resume_app.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/Chethan-Gondrala/Resume-creator-app.git" target="_blank">Resume Creator App using Html,Css,JavaScript</a></h3>
+			  <p>Create professional resumes effortlessly with our intuitive web app. Choose from customizable templates, import details from LinkedIn, and add sections for work experience, education, skills, and achievements. Enjoy real-time previews, built-in spell check, secure cloud storage, and export options in PDF and DOCX formats. Start crafting your standout resume today!</p>
+			</div>
+		  </div>
+		</div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
               <a href="https://github.com/Chethan-Gondrala/flip-card.git" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/flikp pic.png');">
@@ -452,31 +438,7 @@ StudyOwl Education Private Limited is an innovative AI-NLP and web development c
           
         </div>
 	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<!-- <div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div>
-			  </div>
-			</div>
-		 </div> -->
+		
 	  </div>
     </section>
 
@@ -738,18 +700,17 @@ StudyOwl Education Private Limited is an innovative AI-NLP and web development c
         </div>
       </div>
     </div>
-	<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg); margin-top: 50px;">
-		<div class="row justify-content-center">
-			<div class="col-md-7 ftco-animate text-center">
-				<h2>More projects on</h2>
-			</div>
+	<div class="video-background">
+		<video autoplay muted loop id="bg-video">
+		   <source src="snow_fall_concept__Falling_raindrops_or_snow_against_a_black_background_4.mp4" type="video/mp4">
+		   Your browser does not support the video tag.
+		</video>
+		<div class="overlay-container">
+		   <h3>More Projects on Github</h3>
+		   <a href="https://github.com/Chethan-Gondrala" target="_blank" class="btn btn-primary">Github</a>
+		   
 		</div>
-	</div>
-		<div class="row justify-content-center">
-			<div class="col-md-7 d-flex justify-content-center">
-				<a href="https://github.com/Chethan-Gondrala" target="_blank" class="btn btn-primary py-3 px-5">GitHub</a>
-			</div>
-		</div>
+	 </div>
 	
 	
 	  
@@ -820,7 +781,7 @@ StudyOwl Education Private Limited is an innovative AI-NLP and web development c
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/2AawSKsQ8sYVJaHn6" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<h2>Have any<span> Question?  </span> <a href="https://forms.gle/2AawSKsQ8sYVJaHn6" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
 				</div>
 			</div>
 				<br>
