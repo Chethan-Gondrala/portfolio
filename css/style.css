@@ -9933,3 +9933,33 @@ textarea.form-control {
   border: none;
   color: #fff;
 }
+.btn.gitbit {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ba8b00;
+  border: none;
+  border-radius: 20px;
+  width: 40%;
+  transition: background-color 0.3s ease;
+  align-items: center;
+}
+.more{
+  margin-left: 30%;
+}
+.btn.gitbit:hover {
+  background-color: #8a6d00;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .btn.gitbit {
+      font-size: 14px;
+      padding: 8px 16px;
+      width: 80%;
+  }
+}
