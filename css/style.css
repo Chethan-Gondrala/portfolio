@@ -220,7 +220,8 @@ h2.mb-4 {
   
   line-height: 1.6;
   color: #fff;
-  width: 55vw;
+  width: 90%;
+  max-width: 800px;
   margin: auto;
   background: rgba(0, 0, 0, 0.6); /* Optional: to make the text stand out against the background video */
   padding: 20px;
